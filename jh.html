@@ -68,16 +68,50 @@
         margin: 0;
         font-family: "DosStory";
         background-color: #e8e9fd;
+        flex-direction: column;
+        display: flex;
+        gap: ;
       }
 
-      #intro {
+      body > section {
+        /* 자식지정, body내 직접적으로 속한 section에 적용 */
         padding: 24px;
+        color: whitesmoke;
+        max-width: 576px;
+        margin: auto;
       }
       #intro .title {
         text-align: center;
       }
       #intro div {
         line-height: 1.15;
+      }
+
+      #tech-stack ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      #tech-stack li {
+        list-style: none;
+        width: 128px;
+        aspect-ratio: 1;
+        /* 가로/세로 비율 */
+        background-color: #08e0e7;
+        border-radius: 8px;
+        border: 4px transparent solid;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #tech-stack img {
+        width: 100%;
+        background-color: white;
+        border-radius: 50%;
       }
     </style>
   </head>
@@ -93,10 +127,27 @@
           기술도 공부하고 있어요. 재밌는 건, 단순히 공부에서 끝내지 않고 실제
           생활에 연결해본다는 거예요. 예를 들어, 우리 집 강아지 네오와 밍키가
           더워할 때 자동으로 에어컨이 켜지도록, RaspberryPi랑 Smartthings를
-          연동하는 프로젝트를 진행 했어요. 네오,밍키랑 같이 하는 프로젝트라 더
-          애정이 가죠 🐶❄️. 앞으로는 백엔드 프로그래머로 취업하는 걸 목표로 준비
-          중이에요.
+          연동하는 '온도조절개' 라는 프로젝트를 진행 했어요. 네오,밍키랑 같이
+          하는 프로젝트라 더 애정이 가죠 🐶❄️. 앞으로는 백엔드 프로그래머로
+          취업하는 걸 목표로 준비 중이에요.
         </div>
+      </section>
+    </section>
+
+    <section id="tech-stack">
+      <section class="box">
+        <h2>💻Tech-Stack</h2>
+        <ul>
+          <li>
+            <img src="icons/python-svgrepo-com.png" alt="python" />
+          </li>
+          <li><img src="icons/icons8-flutter-240.png" alt="flutter" /></li>
+          <li><img src="icons/java-svgrepo-com.png" alt="java" /></li>
+          <li><img src="icons/mysql-svgrepo-com.png" alt="mysql" /></li>
+          <li><img src="icons/aws-svgrepo-com.png" alt="aws" /></li>
+          <li><img src="icons/icons8-spring-boot-80.png" alt="spring" /></li>
+          <li><img src="icons/github-142-svgrepo-com.png" alt="github" /></li>
+        </ul>
       </section>
     </section>
 
