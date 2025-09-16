@@ -20,7 +20,20 @@
     />
     <link rel="manifest" href="/./site.webmanifest" />
 
+    <meta property="og:title" content="한재호를 소개합니다." />
+    <meta
+      property="og:description"
+      content="개발자 꿈나무 한재호의 포트폴리오입니다."
+    />
+
+    <meta property="og:image" content="neo.jpg" />
     <style>
+      /*     
+      배경색 : #E8F9FD
+      박스색 : #0AA1DD
+      컨텐츠 : #79DAE8
+      글자색 : #FFFFFF
+       */
       @font-face {
         font-family: "DosStory";
         src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSIyagiMedium.woff2")
@@ -39,33 +52,53 @@
 
       .title {
         font-family: "Simple";
+        color: #2155cd;
       }
 
       * {
         box-sizing: border-box;
       }
 
+      .box {
+        background-color: #0aa1dd;
+        padding: 24px;
+        border-radius: 17.5%;
+      }
       body {
         margin: 0;
         font-family: "DosStory";
+        background-color: #e8e9fd;
+      }
+
+      #intro {
+        padding: 24px;
+      }
+      #intro .title {
+        text-align: center;
+      }
+      #intro div {
+        line-height: 1.15;
       }
     </style>
   </head>
   <body>
-    <h1 class="title">안녕하세요 한재호입니다</h1>
-    <p>
-      저는 프로그래밍과 기술을 좋아해서 이것저것 배우고 있는 사람입니다.
-      Python으로 데이터 다루는 걸 시작으로, pandas랑 scikit-learn으로 영화 추천
-      시스템 같은 것도 만들어봤어요. 요즘은 Flutter로 앱을 만들거나 백엔드
-      기술도 공부하고 있어요. 재밌는 건, 단순히 공부에서 끝내지 않고 실제 생활에
-      연결해본다는 거예요. 예를 들어, 우리 집 강아지 네오와 밍키가 더워할 때
-      자동으로 에어컨이 켜지도록, 라즈베리파이랑 스마트싱스를 연동하는
-      프로젝트를 진행하고 있어요. 네오,밍키랑 같이 하는 프로젝트라 더 애정이
-      가죠 🐶❄️ 게임에도 관심이 있어서 Flutter로 간단한 퍼즐 게임 같은 걸
-      만들어보려 하고, MATLAB으로는 시뮬레이션 과제를 풀면서 수학적인 감각도
-      키워가고 있어요. 앞으로는 백엔드 프로그래머로 취업하는 걸 목표로 준비
-      중이에요.
-    </p>
+    <section id="intro">
+      <h1 class="title">안녕하세요 한재호입니다</h1>
+      <section class="box">
+        <div>
+          저는 프로그래밍과 기술을 좋아해서 이것저것 배우고 있는 사람입니다.
+          Python으로 데이터 다루는 걸 시작으로, Pandas랑 Scikit-Learn으로 영화
+          추천 시스템 같은 것도 만들어봤어요. 3년 이상의 수학강사 경력으로
+          수학적 능력도 갖추고 있어요. 요즘은 Flutter로 앱을 만들거나 백엔드
+          기술도 공부하고 있어요. 재밌는 건, 단순히 공부에서 끝내지 않고 실제
+          생활에 연결해본다는 거예요. 예를 들어, 우리 집 강아지 네오와 밍키가
+          더워할 때 자동으로 에어컨이 켜지도록, RaspberryPi랑 Smartthings를
+          연동하는 프로젝트를 진행 했어요. 네오,밍키랑 같이 하는 프로젝트라 더
+          애정이 가죠 🐶❄️. 앞으로는 백엔드 프로그래머로 취업하는 걸 목표로 준비
+          중이에요.
+        </div>
+      </section>
+    </section>
 
     <a
       href="https://www.ideaboom.net/project/project/view?seq=1802&page=2&search_keyword=%EC%A1%B8%EC%97%85&data_seq[]=1&data_seq[]=2&data_seq[]=3&data_seq[]=4&data_seq[]=5&data_seq[]=6&data_seq[]=7&data_seq[]=8&data_seq[]=9&data_seq[]=10&data_seq[]=11&data_seq[]=12&data_seq[]=13&order=reg"
