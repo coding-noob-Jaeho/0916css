@@ -79,6 +79,7 @@
         color: whitesmoke;
         max-width: 576px;
         margin: auto;
+        width: 100%;
       }
       #intro .title {
         text-align: center;
@@ -113,6 +114,31 @@
         background-color: white;
         border-radius: 50%;
       }
+
+      
+
+
+      #portfolio .box{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 24px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+      }
+      #portfolio .item{
+        background-color: #08e0e7;
+        width: 100%;
+        min-height: 128px;
+        padding: 8px;
+        gap:16px;
+        border-radius: 20px;
+        border: 1px #fff1f1 solid;
+        box-sizing:border-box;
+        margin-top:16px;
+      }
+
     </style>
   </head>
   <body>
@@ -154,16 +180,16 @@
     <section id="portfolio">
         <section class="box">
             <h2>🎨 Portfolio</h2>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            
-    </section>
-    <a
+            <div class="item"> <h3> 여행 추천 프로젝트 </h3></div>
+            <div class="item"><h3>재능 매칭 프로젝트 </h3></div>
+            <div class="item"><h3><a
       href="https://www.ideaboom.net/project/project/view?seq=1802&page=2&search_keyword=%EC%A1%B8%EC%97%85&data_seq[]=1&data_seq[]=2&data_seq[]=3&data_seq[]=4&data_seq[]=5&data_seq[]=6&data_seq[]=7&data_seq[]=8&data_seq[]=9&data_seq[]=10&data_seq[]=11&data_seq[]=12&data_seq[]=13&order=reg"
       target="_blank"
     >
       온도조절개
-    </a>
+    </a></h3><br>혼자 집에 남겨진 반려견이 더운 환경에 노출되지 않도록, 온도를 자동으로 측정하고 에어컨을 제어하여 반려견에게 최적의 환경을 제공하는 어플리케이션입니다. </div>
+            
+    </section>
+    
   </body>
 </html>
